@@ -9,3 +9,10 @@ setopt EXTENDED_HISTORY
 function history-all { history -E 1 }
 
 export PATH=/usr/local/bin:$PATH
+
+# GO
+export GOPATH=$HOME/Documents/workspace/go/src
+export GOBIN=$GOPATH/bin
+if [ -x "`which go`" ]; then
+    export PATH=$PATH:$GOBIN
+fi
