@@ -7,3 +7,5 @@ setopt hist_ignore_dups
 setopt EXTENDED_HISTORY
 
 function history-all { history -E 1 }
+
+export PATH=/usr/local/bin:$PATH
