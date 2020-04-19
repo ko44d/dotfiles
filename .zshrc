@@ -33,3 +33,6 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 # direnv
 export EDITOR=vim
 eval "$(direnv hook zsh)"
+
+# zsh-autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
