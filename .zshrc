@@ -1,3 +1,5 @@
+export PATH=/usr/local/bin:$PATH
+
 PS1="[%n@%m %~]\$ "
 
 export HISTFILE=${HOME}/.zsh_history
@@ -8,7 +10,6 @@ setopt EXTENDED_HISTORY
 
 function history-all { history -E 1 }
 
-export PATH=/usr/local/bin:$PATH
 
 # GO
 export GOPATH=$HOME/Documents/workspace/go
@@ -36,3 +37,13 @@ eval "$(direnv hook zsh)"
 
 # zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zplug
+export ZPLUG_HOME=$HOME/.zplug
+source ~/.zplug/init.zsh
+
+# enhancd
+zplug "b4b4r07/enhancd", use:init.sh
+export ENHANCD_FILTER="/usr/local/bin/peco"
+
+zplug load --verbose
