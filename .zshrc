@@ -10,13 +10,8 @@ setopt EXTENDED_HISTORY
 
 function history-all { history -E 1 }
 
-
 # GO
-export GOPATH=$HOME/Documents/workspace/go
-export GOBIN=$GOPATH/bin
-if [ -x "`which go`" ]; then
-    export PATH=$PATH:$GOBIN
-fi
+export PATH=$PATH:/usr/local/go/bin
 
 # Git
 autoload -Uz compinit && compinit
