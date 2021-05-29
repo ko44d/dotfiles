@@ -10,8 +10,17 @@ setopt EXTENDED_HISTORY
 
 function history-all { history -E 1 }
 
-# GO
-export PATH=$PATH:/usr/local/go/bin
+# goenv
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+
+# Go
+export GOPATH=$HOME/Documents/workspace/go/src
+export GOBIN=$GOPATH/bin
+if [ -x "`which go`" ]; then
+    export PATH=$PATH:$GOBIN
+fi
 
 # Git
 autoload -Uz vcs_info
