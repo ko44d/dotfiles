@@ -41,15 +41,20 @@ autoload -Uz compinit && compinit
 export EDITOR=vim
 eval "$(direnv hook zsh)"
 
+# volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 # zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zplug
-export ZPLUG_HOME=$HOME/.zplug
-source ~/.zplug/init.zsh
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
 # enhancd
 zplug "b4b4r07/enhancd", use:init.sh
 export ENHANCD_FILTER="/usr/local/bin/peco"
 
 zplug load --verbose
+
