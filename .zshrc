@@ -13,15 +13,7 @@ function history-all { history -E 1 }
 # goenv
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
-export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
-
-# Go
-export GOPATH=$HOME/Documents/workspace/go/src
-export GOBIN=$GOPATH/bin
-if [ -x "`which go`" ]; then
-    export PATH=$PATH:$GOBIN
-fi
 
 # Git
 autoload -Uz vcs_info
