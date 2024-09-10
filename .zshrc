@@ -40,10 +40,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # Postgres
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
-# jenv
-echo 'export PATH="$HOME/.jenv/bin:$PATH"'
-echo 'eval "$(jenv init -)"'
-
 # zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
