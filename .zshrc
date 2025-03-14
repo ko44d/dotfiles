@@ -19,6 +19,9 @@ export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 
+# Go のバイナリがあるディレクトリを PATH に追加
+export PATH=$(go env GOPATH)/bin:$PATH
+
 # Git プロンプト情報
 autoload -Uz vcs_info
 setopt prompt_subst
