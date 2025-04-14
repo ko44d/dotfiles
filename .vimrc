@@ -58,7 +58,6 @@ set autoread          " ファイル変更を自動読み込み
 set nobackup          " バックアップファイルを作らない
 set nowritebackup     " 書き込み時のバックアップを作らない
 set noswapfile        " スワップファイルを作らない
-set undofile          " アンドゥ履歴を保持
 
 " =============================================
 " キーマッピング
