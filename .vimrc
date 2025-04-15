@@ -45,7 +45,6 @@ set wildmode=longest,list,full
 " =============================================
 " カラースキーム & UI
 " =============================================
-syntax on             " シンタックスハイライトを有効化
 set background=dark   " ダークテーマ
 colorscheme desert    " カラースキームを設定
 
