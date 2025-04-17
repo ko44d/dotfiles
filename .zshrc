@@ -1,4 +1,5 @@
 # PATH 設定（優先度の高いものを前に）
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$HOME/.orbstack/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # プロンプト設定
