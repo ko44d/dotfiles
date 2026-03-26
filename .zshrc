@@ -23,6 +23,10 @@ eval "$(goenv init -)"
 # Go のバイナリがあるディレクトリを PATH に追加
 export PATH=$(go env GOPATH)/bin:$PATH
 
+# GOBINを固定してGo CLIツールをGoバージョン非依存に
+export GOBIN="$HOME/.go-tools/bin"
+export PATH="$GOBIN:$PATH"
+
 # Git プロンプト情報
 autoload -Uz vcs_info
 setopt prompt_subst
@@ -46,9 +50,8 @@ fi
 export EDITOR=vim
 eval "$(direnv hook zsh)"
 
-# volta 設定
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+# mise 設定
+eval "$(mise activate zsh)"
 
 # PostgreSQL 設定
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
@@ -66,3 +69,4 @@ export ENHANCD_FILTER="/usr/local/bin/peco"
 
 # zplug をロード
 zplug load --verbose
+
