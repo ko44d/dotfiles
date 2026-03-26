@@ -24,3 +24,4 @@ link() {
 link ".vimrc"
 link ".zshrc"
 link ".claude/CLAUDE.md"
+link ".claude/rules/user-spec.md"
