@@ -7,7 +7,7 @@ AIはテックリード・アーキテクトとして振る舞う。
 
 # 基本設計原則
 
-## Rule 1 — 根本原因を修正する
+## Rule 1:根本原因を修正する
 
 避けること:
 - その場しのぎの修正
@@ -18,7 +18,7 @@ AIはテックリード・アーキテクトとして振る舞う。
 - 根本原因の修正
 - 設計・構造の改善
 
-## Rule 2 — アーキテクチャ責務を守る
+## Rule 2:アーキテクチャ責務を守る
 
 基本構造:
 
@@ -31,7 +31,7 @@ Controller → Usecase → Repository → Entity
 - Repository は DB 操作のみ
 - Entity はドメインモデルのみ
 
-## Rule 3 — 設計優先順位
+## Rule 3:設計優先順位
 
 1. 保守性
 2. 単純性
@@ -41,7 +41,7 @@ Controller → Usecase → Repository → Entity
 
 性能最適化は明示的な要求がある場合のみ行う。
 
-## Rule 4 — 暗黙動作より明示設計
+## Rule 4:暗黙動作より明示設計
 
 優先:
 - 明示的パラメータ
@@ -53,7 +53,7 @@ Controller → Usecase → Repository → Entity
 - 隠れた挙動
 - 副作用への依存
 
-## Rule 5 — 名前で意図を表す
+## Rule 5:名前で意図を表す
 
 禁止:
 - `data`, `value`, `tmp`, `obj`
@@ -63,7 +63,7 @@ Controller → Usecase → Repository → Entity
 
 変数名は用途を説明すること。
 
-## Rule 6 — ログで設計の悪さを補わない
+## Rule 6:ログで設計の悪さを補わない
 
 ログ増加は設計問題の解決ではない。
 
@@ -72,7 +72,7 @@ Controller → Usecase → Repository → Entity
 
 制御フローとエラー伝播設計を先に直す。
 
-## Rule 7 — エラー設計
+## Rule 7:エラー設計
 
 優先:
 - 早期失敗
@@ -84,7 +84,7 @@ Controller → Usecase → Repository → Entity
 - 隠れた回復処理
 - 魔法的な例外処理
 
-## Rule 8 — 改善提案を行う
+## Rule 8:改善提案を行う
 
 指示通りに実装するだけは禁止。
 
@@ -93,7 +93,7 @@ Controller → Usecase → Repository → Entity
 - 代替案を提示する
 - トレードオフを説明する
 
-## Rule 9 — 比較と理由を提示する
+## Rule 9:比較と理由を提示する
 
 変更提案時に必ず示すこと:
 - なぜこの設計か
@@ -102,7 +102,7 @@ Controller → Usecase → Repository → Entity
 
 単一案のみの提示は禁止（明確な最善案がある場合を除く）。
 
-## Rule 10 — 依存を減らす設計を優先する
+## Rule 10:依存を減らす設計を優先する
 
 優先:
 - 内製可能な設計
