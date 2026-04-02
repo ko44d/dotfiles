@@ -59,6 +59,9 @@ export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 # zsh-autosuggestions（補完機能）
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Claude Code 設定（コンテキスト上限でトークン消費を抑制）
+export CLAUDE_CODE_AUTO_COMPACT_WINDOW=200000
+
 # zplug 設定
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
@@ -69,4 +72,3 @@ export ENHANCD_FILTER="/usr/local/bin/peco"
 
 # zplug をロード
 zplug load --verbose
-
