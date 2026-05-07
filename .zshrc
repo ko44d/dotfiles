@@ -15,14 +15,6 @@ setopt EXTENDED_HISTORY
 # 全履歴を表示する関数
 function history-all { history -E 1 }
 
-# goenv 設定
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
-
-# Go のバイナリがあるディレクトリを PATH に追加
-export PATH=$(go env GOPATH)/bin:$PATH
-
 # GOBINを固定してGo CLIツールをGoバージョン非依存に
 export GOBIN="$HOME/.go-tools/bin"
 export PATH="$GOBIN:$PATH"
